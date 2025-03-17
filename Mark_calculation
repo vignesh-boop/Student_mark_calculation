@@ -1,0 +1,76 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        double ECA;
+        double professional_English_2;
+        double statices_and_numerical_method;
+        double physics_for_electrical;
+        double EG;
+        double BCM;
+        double lab1;
+        double lab2;
+        Scanner Scan = new Scanner(System.in);
+        System.out.println("%%%%%%%%%%%%%%%%%%%%%%%-GPA CALCULATOR-%%%%%%%%%%%%%%%%%%%%%%%%%");
+        System.out.println("=======================####==*==NOTICE==*===######=================================================");
+        System.out.println("                                                         ");
+        System.out.println("ENTER GRADE(O) = 10");
+        System.out.println("ENTER GRADE(A+) = 9");
+        System.out.println("ENTER GRADE(A) = 8");
+        System.out.println("ENTER GRADE(B+) = 7");
+        System.out.println("ENTER GRADE(B) = 6");
+        System.out.println("ENTER GRADE(U) = 0");
+        System.out.println("*****************************************************************************");
+
+        System.out.println("ENTER YOUR ECA GRADE =");
+        System.out.println("ENTER YOUR PROFESSIONAL ENGLISH 2 GRADE =");
+        System.out.println("ENTER YOUR STATASTIC FOR NUMERICAL METHOD GRADE =");
+        System.out.println("ENTER YOUR PHYSICS FOR ELECTRICAL GRADE =");
+        System.out.println("ENTER YOUR EG GRADE =");
+        System.out.println("ENTER YOUR BCM GRADE =");
+        System.out.println("ENTER YOUR LAB 1 GRADE =");
+        System.out.println("ENTER YOUR LAB 2 GRADE =");
+
+        ECA = Scan.nextDouble();
+        professional_English_2 = Scan.nextDouble();
+        statices_and_numerical_method = Scan.nextDouble();
+        physics_for_electrical = Scan.nextDouble();
+        EG = Scan.nextDouble();
+        BCM = Scan.nextDouble();
+        lab1= Scan.nextDouble();
+        lab2= Scan.nextDouble();
+
+
+        double fla=(ECA+lab1+lab2+BCM+professional_English_2+statices_and_numerical_method+EG+physics_for_electrical);
+        double fla1 = (fla*29);
+        double fla2 = (fla1/29);
+        double fla3 = (fla2/2);
+        double fla5 = (fla3/4);
+        System.out.println("YOUR GPA IS = "+fla5);
+        if (fla5>=9.1 && fla5<=10){
+            System.out.println("********YOU HAD EXCELLENHT GPA SCORE*****");
+        }
+        if(fla5>=8.1&&fla5<=9){
+            System.out.println("********YOU HAD WELL GPA*******");
+
+        }
+        if(fla5>=7.1&&fla5<=8){
+            System.out.println("***YOU HAD GOOD GPA***");
+
+        }
+        if(fla5>=6.1&&fla5<=7){
+            System.out.println("******YOU HAD NICE GPA*****");
+
+        }
+        if(fla5>=5.1&&fla5<=6) {
+            System.out.println("*****YOUR SUPER GPA************");
+        }
+        if(fla5>=10.1){
+            System.out.println("YOU ENTERED VALU IS WRONG");
+        }
+        System.out.println("**!!!!!!!!!!!!!!!!!!**************THANKOU YOU FOR WISITING OUR WEBSITE******************!!!!!!!!!!!!!!!!!!!!!!!!!****");
+    }
+}
